@@ -13,16 +13,16 @@ class Slide extends Component {
 	}
 
 	state = {
-		baseWidth: document.documentElement.clientWidth,
+		baseWidth: document.documentElement.clientWidth, //宽度
 		startX: "",
 		curX: "",
 		moveX: "",
 		time: 0,
-		distance: 0,
-		swiper: 30,
+		distance: 0, //移动距离
+		swiper: 30, //滑动滚动触发距离
 		index: 0,
 		length: this.props.opts.length,
-		continuous: true
+		continuous: true //是否循环滚动
 	}
 
 	touchStart (e) {
@@ -62,6 +62,11 @@ class Slide extends Component {
 		})
 	}
 
+	/**
+	 * index控制
+	 * @param  {num} go   指定index数值
+	 * @param  {num} time transition时间
+	 */
 	slideFun (go, time) {
 		var _index = this.state.index
 		if(typeof go === "number") {
@@ -113,6 +118,11 @@ class Slide extends Component {
 		}
 	}
 
+	/**
+	 * 滚动函数
+	 * @param  {num} index 指定滚动的index
+	 * @param  {num} time  transition的时间
+	 */
 	scrollFun (index, time) {
 		this.setState({
 			time: time,
@@ -121,6 +131,7 @@ class Slide extends Component {
 	}
 
 	componentDidMount() {
+		// 循环滚动 index+1
 		if(this.state.continuous) {
 			var newIndex = this.state.index + 1
 			this.setState({

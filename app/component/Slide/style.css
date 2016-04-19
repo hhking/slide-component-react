@@ -1,0 +1,9 @@
+.slide-wrap {
+	position: relative;
+}
+
+.slide-ul {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}

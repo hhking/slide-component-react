@@ -1,0 +1,34 @@
+/*reset*/
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	background: transparent;
+	-webkit-tap-highlight-color: transparent;
+}
+
+ul{
+	list-style: none outside none;
+}
+
+img{
+	display: block;
+}
+/*reset end*/

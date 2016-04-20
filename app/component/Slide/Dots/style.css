@@ -1,0 +1,16 @@
+.dots{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 8px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.dots:first-child {
+	margin-left: 0;
+}
+
+.dots:global.active {
+	background: #fff;
+}
